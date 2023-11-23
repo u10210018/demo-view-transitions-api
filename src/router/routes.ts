@@ -11,6 +11,12 @@ const routes = [
     title: '清單頁',
     component: () => import('@/pages/ListView.vue'),
   },
+  {
+    path: '/detail/:id',
+    name: 'detail',
+    title: '詳細頁',
+    component: () => import('@/pages/DetailView.vue'),
+  },
 ]
 
 export default routes

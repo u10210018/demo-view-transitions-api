@@ -10,11 +10,8 @@ router.beforeEach((_to, _from, next) => {
   next()
 })
 
-router.afterEach((to, _from) => {
-  const _title = to.meta.title as string
-  if (_title) {
-    window.document.title = _title
-  }
+router.afterEach((to, from) => {
+  console.log(to, from)
 })
 
 export default router
