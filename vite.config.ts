@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
       vue(),
       AutoImport({
         include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/, /\.md$/],
-        imports: ['vue'],
+        imports: ['vue', 'vue-router'],
       }),
     ],
     css: {
