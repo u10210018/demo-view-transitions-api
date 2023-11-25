@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const screens = require('./screens.json')
 const colors = require('./colors.json')
 const fontSize = require('./fontSize.json')
+const { easings } = require('postcss-easings')
 
 module.exports = {
   theme: {
@@ -25,6 +26,12 @@ module.exports = {
           '0%': { opacity: 0, transform: 'translateY(100px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
+      },
+      transitionTimingFunction: { ...easings },
+    },
+    variants: {
+      extend: {
+        transitionTimingFunction: ['hover', 'focus'],
       },
     },
     screens,
