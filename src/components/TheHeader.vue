@@ -5,9 +5,7 @@
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <div class="text-center sm:text-left">
-          <h1 class="text-2xl sm:text-3xl font-bold">Welcome Back, Barry!</h1>
-
-          <p class="mt-1.5 text-sm">Let's write a new blog post! 🎉</p>
+          <RouterLink to="/" class="text-h4">View Transitions API</RouterLink>
         </div>
 
         <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">

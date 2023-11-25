@@ -12,7 +12,7 @@ const routes = [
     component: () => import('@/pages/ListView.vue'),
   },
   {
-    path: '/detail/:id',
+    path: '/detail/:name',
     name: 'detail',
     title: '詳細頁',
     component: () => import('@/pages/DetailView.vue'),

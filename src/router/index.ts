@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { viewTransition } from '@/lib/utils'
 import routes from '@/router/routes'
 
 const router = createRouter({
@@ -7,11 +8,7 @@ const router = createRouter({
 })
 
 router.beforeEach((_to, _from, next) => {
-  next()
-})
-
-router.afterEach((to, from) => {
-  console.log(to, from)
+  viewTransition(next)
 })
 
 export default router
