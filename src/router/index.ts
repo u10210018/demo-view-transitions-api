@@ -3,7 +3,7 @@ import { viewTransition } from '@/lib/utils'
 import routes from '@/router/routes'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/demo-view-transitions-api/'),
   routes: routes,
 })
 
