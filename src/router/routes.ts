@@ -6,13 +6,13 @@ const routes = [
     component: () => import('@/pages/HomeView.vue'),
   },
   {
-    path: '/list',
+    path: '/pokemon',
     name: 'list',
     title: '清單頁',
     component: () => import('@/pages/ListView.vue'),
   },
   {
-    path: '/detail/:name',
+    path: '/pokemon/:name',
     name: 'detail',
     title: '詳細頁',
     component: () => import('@/pages/DetailView.vue'),

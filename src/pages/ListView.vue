@@ -19,7 +19,7 @@ const handleActiveCard = (payload: Pokemon) => {
   <div class="container">
     <div class="md:flex">
       <div class="w-full md:w-1/3">
-        <div v-if="activeItem">
+        <div v-if="activeItem" class="sticky top-0">
           <img
             :src="activeItem.imageUrl"
             :alt="activeItem.nameTW"
