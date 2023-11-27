@@ -11,11 +11,14 @@ const data = ref<Pokemon | null>(null)
 const { getDetail } = usePokemon()
 
 const route = useRoute()
-onMounted(async () => {
-  if (!Array.isArray(route.params.name)) {
-    data.value = await getDetail(route.params.name)
-  }
-})
+
+{
+  ;(async () => {
+    if (!Array.isArray(route.params.name)) {
+      data.value = await getDetail(route.params.name)
+    }
+  })()
+}
 </script>
 
 <template>

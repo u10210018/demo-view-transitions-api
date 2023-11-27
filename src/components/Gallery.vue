@@ -34,7 +34,7 @@ const handleNameClick = (item: Pokemon) => {
       class="block"
       :style="{ '--primary-color': getRandomColor(index) }"
     >
-      <RouterLink :to="`/detail/${item.name}`" class="group grid aspect-square grid-cols-1 grid-rows-1">
+      <RouterLink :to="`/pokemon/${item.name}`" class="group grid aspect-square grid-cols-1 grid-rows-1">
         <div
           class="clip-to-circle col-span-1 col-start-1 row-span-1 row-start-1 rounded-xl bg-[var(--primary-color)] transition-[transform,filter,clip-path] duration-300 ease-easeInOutBack group-hover:translate-y-[5%] group-hover:scale-90"
         ></div>

@@ -17,7 +17,7 @@
           </RouterLink>
 
           <RouterLink
-            to="/list"
+            to="/pokemon"
             class="block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium transition hover:bg-indigo-700 focus:outline-none focus:ring"
           >
             列表
