@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Slider from '@/components/Slider.vue'
+import Photos from '@/components/Photos.vue'
 
 defineOptions({
   name: 'HomeView',
@@ -13,7 +13,7 @@ defineOptions({
       states while also updating the DOM contents in a single step.
     </div>
     <div>
-      <Slider />
+      <Photos />
     </div>
   </div>
 </template>
