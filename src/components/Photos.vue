@@ -9,7 +9,7 @@ const imageList = ref<{ key: string; name: string; imageUrl: string }[]>(
   }))
 )
 
-const activeKey = ref<string>('')
+const activeKey = ref<string>('image-0')
 
 const handleActive = async (key: string) => {
   viewTransition(() => {
@@ -19,7 +19,7 @@ const handleActive = async (key: string) => {
 </script>
 
 <template>
-  <div class="slider-wrapper my-10">
+  <div class="photo-wrapper my-10">
     <div class="flex w-full flex-wrap items-center gap-8">
       <button
         type="button"
@@ -36,9 +36,9 @@ const handleActive = async (key: string) => {
 </template>
 
 <style scoped lang="scss">
-.slider-wrapper {
+.photo-wrapper {
   .vt-img {
-    --view-transition-name: slider-transition;
+    --view-transition-name: photo-transition;
     width: 532px;
   }
 }
